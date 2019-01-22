@@ -1,0 +1,19 @@
+F:\Visual Studio 2017\Save\Endless Sword\Endless Sword\bin\Debug\Endless Sword.exe.config
+F:\Visual Studio 2017\Save\Endless Sword\Endless Sword\bin\Debug\Endless Sword.exe
+F:\Visual Studio 2017\Save\Endless Sword\Endless Sword\bin\Debug\Endless Sword.pdb
+F:\Visual Studio 2017\Save\Endless Sword\Endless Sword\obj\Debug\Endless Sword.csprojResolveAssemblyReference.cache
+F:\Visual Studio 2017\Save\Endless Sword\Endless Sword\obj\Debug\Endless_Sword.Form1.resources
+F:\Visual Studio 2017\Save\Endless Sword\Endless Sword\obj\Debug\Endless_Sword.Properties.Resources.resources
+F:\Visual Studio 2017\Save\Endless Sword\Endless Sword\obj\Debug\Endless Sword.csproj.GenerateResource.Cache
+F:\Visual Studio 2017\Save\Endless Sword\Endless Sword\obj\Debug\Endless Sword.exe
+F:\Visual Studio 2017\Save\Endless Sword\Endless Sword\obj\Debug\Endless Sword.pdb
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\bin\Debug\Endless Sword.exe.config
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\bin\Debug\Endless Sword.exe
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\bin\Debug\Endless Sword.pdb
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\obj\Debug\Endless Sword.csprojResolveAssemblyReference.cache
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\obj\Debug\Endless_Sword.Form1.resources
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\obj\Debug\Endless_Sword.Properties.Resources.resources
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\obj\Debug\Endless Sword.csproj.GenerateResource.Cache
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\obj\Debug\Endless Sword.csproj.CoreCompileInputs.cache
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\obj\Debug\Endless Sword.exe
+F:\VS2017Save\C#\Endless Swordv1.5\Endless Sword\obj\Debug\Endless Sword.pdb

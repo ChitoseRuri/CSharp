@@ -1,0 +1,10 @@
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\obj\Debug\osystemExperiment_3_1.csprojAssemblyReference.cache
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\obj\Debug\osystemExperiment_3_1.Form1.resources
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\obj\Debug\osystemExperiment_3_1.csproj.GenerateResource.cache
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\bin\Debug\osystemExperiment_3_1.exe.config
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\bin\Debug\osystemExperiment_3_1.exe
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\bin\Debug\osystemExperiment_3_1.pdb
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\obj\Debug\osystemExperiment_3_1.Properties.Resources.resources
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\obj\Debug\osystemExperiment_3_1.csproj.CoreCompileInputs.cache
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\obj\Debug\osystemExperiment_3_1.exe
+F:\VS2017Save\C#\CSharp\osystemExperiment_3_1\osystemExperiment_3_1\obj\Debug\osystemExperiment_3_1.pdb

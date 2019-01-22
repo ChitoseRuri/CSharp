@@ -1,0 +1,9 @@
+F:\Visual Studio 2017\Save\C#\LittleWitchAcademy\LittleWitchAcademy\bin\Debug\LittleWitchAcademy.exe.config
+F:\Visual Studio 2017\Save\C#\LittleWitchAcademy\LittleWitchAcademy\bin\Debug\LittleWitchAcademy.exe
+F:\Visual Studio 2017\Save\C#\LittleWitchAcademy\LittleWitchAcademy\bin\Debug\LittleWitchAcademy.pdb
+F:\Visual Studio 2017\Save\C#\LittleWitchAcademy\LittleWitchAcademy\obj\Debug\LittleWitchAcademy.Form1.resources
+F:\Visual Studio 2017\Save\C#\LittleWitchAcademy\LittleWitchAcademy\obj\Debug\LittleWitchAcademy.Properties.Resources.resources
+F:\Visual Studio 2017\Save\C#\LittleWitchAcademy\LittleWitchAcademy\obj\Debug\LittleWitchAcademy.csproj.GenerateResource.Cache
+F:\Visual Studio 2017\Save\C#\LittleWitchAcademy\LittleWitchAcademy\obj\Debug\LittleWitchAcademy.exe
+F:\Visual Studio 2017\Save\C#\LittleWitchAcademy\LittleWitchAcademy\obj\Debug\LittleWitchAcademy.pdb
+F:\Visual Studio 2017\Save\C#\LittleWitchAcademy\LittleWitchAcademy\obj\Debug\LittleWitchAcademy.csprojResolveAssemblyReference.cache
