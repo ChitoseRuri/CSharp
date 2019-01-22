@@ -1,0 +1,11 @@
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\bin\Debug\VegetableNinjaMenu.exe.config
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\bin\Debug\VegetableNinjaMenu.exe
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\bin\Debug\VegetableNinjaMenu.pdb
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\obj\Debug\VegetableNinjaMenu.Form1.resources
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\obj\Debug\VegetableNinjaMenu.Properties.Resources.resources
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\obj\Debug\VegetableNinjaMenu.csproj.GenerateResource.Cache
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\obj\Debug\VegetableNinjaMenu.csproj.CoreCompileInputs.cache
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\obj\Debug\VegetableNinjaMenu.exe
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\obj\Debug\VegetableNinjaMenu.pdb
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\obj\Debug\VegetableNinjaMenu.csprojResolveAssemblyReference.cache
+F:\VS2017Save\Cloud\Chitose_Ruri\VegetableNinjaMenu\VegetableNinjaMenu\obj\Debug\VegetableNinjaMenu.Form2.resources
