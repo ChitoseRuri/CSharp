@@ -1,0 +1,15 @@
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\bin\Debug\A.1_VideoDrawExercise.exe.config
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\bin\Debug\A.1_VideoDrawExercise.exe
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\bin\Debug\A.1_VideoDrawExercise.pdb
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\A.1_VideoDrawExercise.csprojAssemblyReference.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\MainWindow.g.cs
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\App.g.cs
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\A.1_VideoDrawExercise_MarkupCompile.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\A.1_VideoDrawExercise_MarkupCompile.lref
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\MainWindow.baml
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\A.1_VideoDrawExercise.g.resources
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\A._1_VideoDrawExercise.Properties.Resources.resources
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\A.1_VideoDrawExercise.csproj.GenerateResource.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\A.1_VideoDrawExercise.csproj.CoreCompileInputs.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\A.1_VideoDrawExercise.exe
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.1_VideoDrawExercise\A.1_VideoDrawExercise\obj\Debug\A.1_VideoDrawExercise.pdb
