@@ -1,0 +1,15 @@
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\bin\Debug\A.2 MutiMissionScanExercise.exe.config
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\bin\Debug\A.2 MutiMissionScanExercise.exe
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\bin\Debug\A.2 MutiMissionScanExercise.pdb
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\A.2 MutiMissionScanExercise.csprojAssemblyReference.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\MainWindow.g.cs
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\App.g.cs
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\A.2 MutiMissionScanExercise_MarkupCompile.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\A.2 MutiMissionScanExercise_MarkupCompile.lref
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\MainWindow.baml
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\A.2 MutiMissionScanExercise.g.resources
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\A._2_MutiMissionScanExercise.Properties.Resources.resources
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\A.2 MutiMissionScanExercise.csproj.GenerateResource.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\A.2 MutiMissionScanExercise.csproj.CoreCompileInputs.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\A.2 MutiMissionScanExercise.exe
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.2 MutiMissionScanExercise\A.2 MutiMissionScanExercise\obj\Debug\A.2 MutiMissionScanExercise.pdb
