@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Net;
+using System.Threading;
 
 namespace A._2_MutiMissionScanExercise
 {
@@ -31,8 +32,8 @@ namespace A._2_MutiMissionScanExercise
         private void Initialize()
         {
             m_LabelWarning.Visibility = Visibility.Hidden;
-            m_TextBeginPort.Text = "0";
-            m_TextEndPort.Text = "255";
+            m_TextBeginPort.Text = "100";
+            m_TextEndPort.Text = "110";
 
         }
 
@@ -58,9 +59,30 @@ namespace A._2_MutiMissionScanExercise
             IP_Worning(IPAddress.TryParse(m_TextIP.Text, out m_IPAddress));
         }
 
-        [Obsolete]
+        private void ScanThread(object ip_in)
+        {
+            IPAddress ip = (IPAddress)ip_in;
+            var time = DateTime.Now.ToBinary();
+            try
+            {
+                var entry = Dns.GetHostEntry(ip);
+                string name = entry.HostName;
+                time = (DateTime.Now.ToBinary() - time) / 1000;
+                m_ListBox.Dispatcher.Invoke(new Action(() =>
+                {
+                    m_ListBox.Items.Add(@"扫描地址：" + ip.ToString() +
+                      @"，扫描用时：" + time.ToString() + @"毫秒，主机DNS名称：" + name);
+                }));
+            }
+            catch(Exception error)
+            {
+
+            }          
+        }
+
         private void ScanBegin(object sender, RoutedEventArgs e)
         {
+            m_ListBox.Items.Clear();
             UInt16 begin, end;
             if (!IP_Worning(UInt16.TryParse(m_TextBeginPort.Text, out begin)))
             {
@@ -85,16 +107,10 @@ namespace A._2_MutiMissionScanExercise
             }
             for (UInt16 i = begin; i <= end; ++i) 
             {
-                if (IP_Worning(IPAddress.TryParse(m_TextIP.Text + i.ToString(), out m_IPAddress))) 
-                {
-                    IPHostEntry entry = Dns.GetHostByAddress(m_IPAddress);
-                    //m_ListBox += @"扫描地址：" + m_IPAddress.ToString() + @"，主机名称：" + entry.HostName + "\n";
-                }
-                else
-                {
-                    return;
-                }
+                Thread thread = new Thread(new ParameterizedThreadStart(ScanThread));
+                thread.Start(IPAddress.Parse(m_TextIP.Text + i.ToString()));
             }
         }
     }
+
 }
