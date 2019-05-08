@@ -1,0 +1,7 @@
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.5_WCF_WPF\A.5_Server\bin\Debug\A.5_Server.dll.config
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.5_WCF_WPF\A.5_Server\bin\Debug\A.5_Server.dll
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.5_WCF_WPF\A.5_Server\bin\Debug\A.5_Server.pdb
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.5_WCF_WPF\A.5_Server\obj\Debug\A.5_Server.csprojAssemblyReference.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.5_WCF_WPF\A.5_Server\obj\Debug\A.5_Server.csproj.CoreCompileInputs.cache
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.5_WCF_WPF\A.5_Server\obj\Debug\A.5_Server.dll
+D:\MyDocument\Document\VSSaves\CSharp\Lab\A.5_WCF_WPF\A.5_Server\obj\Debug\A.5_Server.pdb
