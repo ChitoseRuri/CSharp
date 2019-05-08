@@ -9,9 +9,9 @@
     <Grid>
         <Label Content="扫描的IP地址范围" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="175" FontSize="20"/>
         <Label Content="地址前缀：" HorizontalAlignment="Left" Margin="34,58,0,0" VerticalAlignment="Top" FontSize="20" Width="99" Height="35"/>
-        <TextBox x:Name="m_TextIP" HorizontalAlignment="Left" Height="25" Margin="138,62,0,0" TextWrapping="Wrap" Text="192.168.1." VerticalAlignment="Top" Width="125" FontSize="20" VerticalContentAlignment="Center" TextChanged="IP_TextBox_TextChanged"/>
+        <TextBox x:Name="m_TextIP" HorizontalAlignment="Left" Height="25" Margin="138,62,0,0" TextWrapping="Wrap" Text="192.168.0." VerticalAlignment="Top" Width="125" FontSize="20" VerticalContentAlignment="Center" TextChanged="IP_TextBox_TextChanged"/>
         <Label Content="起始值：" HorizontalAlignment="Left" Margin="280,58,0,0" VerticalAlignment="Top" FontSize="20" Width="81" Height="35" RenderTransformOrigin="-0.072,0.46"/>
-        <TextBox x:Name="m_TextBeginPort" HorizontalAlignment="Left" Height="25" Margin="366,62,0,0" TextWrapping="Wrap" Text="102" VerticalAlignment="Top" Width="70" FontSize="20" VerticalContentAlignment="Center" RenderTransformOrigin="0.386,0.484"/>
+        <TextBox x:Name="m_TextBeginPort" HorizontalAlignment="Left" Height="25" Margin="366,62,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="70" FontSize="20" VerticalContentAlignment="Center" RenderTransformOrigin="0.386,0.484"/>
         <Label Content="终止值：" HorizontalAlignment="Left" Margin="437,58,0,0" VerticalAlignment="Top" FontSize="20" Width="81" Height="35" RenderTransformOrigin="-0.072,0.46"/>
         <TextBox x:Name="m_TextEndPort" HorizontalAlignment="Left" Height="25" Margin="523,62,0,0" TextWrapping="Wrap" Text="105" VerticalAlignment="Top" Width="70" FontSize="20" VerticalContentAlignment="Center" RenderTransformOrigin="0.386,0.484"/>
         <Button Content="开始扫描" HorizontalAlignment="Left" Margin="598,62,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="ScanBegin"/>
