@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A._5_Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="群聊客户端" Height="450" Width="800" Background="#FFF0EAEA">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="349*"/>
+            <ColumnDefinition Width="443*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="用户名：" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="105,10,0,0" TextWrapping="Wrap" Text="Chitose Ruri" VerticalAlignment="Top" Width="163" FontSize="20" VerticalContentAlignment="Center"/>
+        <Label Content="在线用户" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" FontSize="20" Background="Black" Foreground="White"/>
+        <Label Content="对话信息" Grid.Column="1" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="发言：" HorizontalAlignment="Left" Margin="105,374,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="180,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="475" FontSize="20" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
+        <Button Content="发送" Grid.Column="1" HorizontalAlignment="Left" Margin="335,374,0,0" VerticalAlignment="Top" Width="75" Height="35" FontSize="20"/>
+        <ListBox HorizontalAlignment="Left" Height="324" Margin="10,85,0,0" VerticalAlignment="Top" Width="90" Background="#FFF0EAEA"/>
+        <ListBox HorizontalAlignment="Left" Height="289" Margin="100,85,0,0" VerticalAlignment="Top" Width="682" Grid.ColumnSpan="2" Background="#FFFAFAFA"/>
+        <Button Content="登录" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top" Width="75" Height="35" FontSize="20"/>
+
     </Grid>
 </Window>
