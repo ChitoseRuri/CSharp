@@ -1,0 +1,15 @@
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\bin\Debug\TerminalSystem.exe.config
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\bin\Debug\TerminalSystem.exe
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\bin\Debug\TerminalSystem.pdb
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\TerminalSystem.csprojAssemblyReference.cache
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\MainWindow.g.cs
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\App.g.cs
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\TerminalSystem_MarkupCompile.cache
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\TerminalSystem_MarkupCompile.lref
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\MainWindow.baml
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\TerminalSystem.g.resources
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\TerminalSystem.Properties.Resources.resources
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\TerminalSystem.csproj.GenerateResource.cache
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\TerminalSystem.csproj.CoreCompileInputs.cache
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\TerminalSystem.exe
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\TerminalSystem\obj\Debug\TerminalSystem.pdb

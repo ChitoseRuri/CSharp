@@ -1,0 +1,17 @@
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\bin\Debug\SupermarketSalesSystem.exe.config
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\bin\Debug\SupermarketSalesSystem.exe
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\bin\Debug\SupermarketSalesSystem.pdb
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem.csprojAssemblyReference.cache
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\App.g.cs
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem_MarkupCompile.cache
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem_MarkupCompile.lref
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem.g.resources
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem.Properties.Resources.resources
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem.csproj.GenerateResource.cache
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem.csproj.CoreCompileInputs.cache
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem.exe
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem.pdb
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\Login.g.cs
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\L.g.cs
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\Login.baml
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\L.baml

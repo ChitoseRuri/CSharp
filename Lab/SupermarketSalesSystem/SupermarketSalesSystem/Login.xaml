@@ -1,0 +1,25 @@
+﻿<Window x:Class="SupermarketSalesSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SupermarketSalesSystem"
+        mc:Ignorable="d"
+        Title="SupermarketSalesSystem" Height="217.313" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="m_AdminLogin" Content="管理员" HorizontalAlignment="Center" Margin="0,73,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="M_AdminLogin_Click"/>
+        <Label Content="登录" HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" FontSize="24" Height="41" Width="58"/>
+        <Button x:Name="m_AssistantLogin" Content="销售员" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" Width="150" Height="30" Click="M_AssistantLogin_Click"/>
+        <TextBox x:Name="m_Name" HorizontalAlignment="Center" Height="30" Margin="0,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150" FontSize="24"/>
+        <TextBox x:Name="m_Password" HorizontalAlignment="Center" Height="30" Margin="0,122,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150" FontSize="24"/>
+        <Button x:Name="m_Cancel" Content="返回" HorizontalAlignment="Center" Margin="-80,159,0,0" VerticalAlignment="Top" Width="74" Height="19" Click="M_Cancel_Click"/>
+        <Button x:Name="m_Enter" Content="确认" HorizontalAlignment="Center" Margin="80,159,0,0" VerticalAlignment="Top" Width="74" Height="19" Click="M_Enter_Click"/>
+        <TextBox x:Name="m_TerminalIP" HorizontalAlignment="Left" Height="25" Margin="58,5,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+        <Label Content="终端ip:" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Height="25"/>
+        <TextBox x:Name="m_TerminalPort" HorizontalAlignment="Left" Height="25" Margin="187,5,0,0" TextWrapping="Wrap" Text="12345" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+    </Grid>
+</Window>
