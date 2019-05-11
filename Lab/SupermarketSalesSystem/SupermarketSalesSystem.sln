@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupermarketSalesSystem", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerminalSystem", "TerminalSystem\TerminalSystem.csproj", "{5970CAF5-165F-4335-A3BD-C36BFE0F4D91}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublicScript", "PublicScript", "{E722F5F8-1529-4019-9447-72D46855F4F1}"
+	ProjectSection(SolutionItems) = preProject
+		PublicScript\Item.cs = PublicScript\Item.cs
+		PublicScript\Protocal.cs = PublicScript\Protocal.cs
+		PublicScript\Tools.cs = PublicScript\Tools.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

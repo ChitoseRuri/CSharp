@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Net;
 using System.Net.Sockets;
 using System.IO;
+using CR;
 
 namespace TerminalSystem
 {
@@ -32,6 +33,7 @@ namespace TerminalSystem
         public MainWindow()
         {
             InitializeComponent();
+            Initial();
         }
 
         private void Initial()
@@ -89,10 +91,10 @@ namespace TerminalSystem
                 {
                     case Protocal.Sale:
                         {
-                            int itemIP = BitConverter.ToInt32(buffer, 4);
+                            int itemID = BitConverter.ToInt32(buffer, 4);
                             foreach(var item in m_Items)
                             {
-                                if(item.ip == itemIP)
+                                if(item.id == itemID)
                                 {
                                     item.saleCount += BitConverter.ToInt32(buffer, 8);
                                     break;
@@ -116,40 +118,23 @@ namespace TerminalSystem
                                 var flength = fs.Length;
                                 var times = flength / m_FSsize + ((flength % m_FSsize == 0) ? 0 : 1);
                                 // 告诉服务端开始更新
-                                int prot = (Int32)Protocal.UpdateBegin;
                                 // 写入协议
-                                buffer[0] = (byte)(prot >> 24);
-                                buffer[1] = (byte)(prot >> 16);
-                                buffer[2] = (byte)(prot >> 8);
-                                buffer[3] = (byte)(prot);
+                                Tools.AddToBytes(buffer, 0, (int)Protocal.UpdateBegin);
                                 // 写入文件长度
-                                buffer[4] = (byte)(flength >> 24);
-                                buffer[5] = (byte)(flength >> 16);
-                                buffer[6] = (byte)(flength >> 8);
-                                buffer[7] = (byte)(flength);
+                                Tools.AddToBytes(buffer, 4, (int)flength);
                                 // 写入发送次数
-                                buffer[8] = (byte)(times >> 24);
-                                buffer[9] = (byte)(times >> 16);
-                                buffer[10] = (byte)(times >> 8);
-                                buffer[11] = (byte)(times);
+                                Tools.AddToBytes(buffer, 8, (int)times);
                                 // 告诉客户端准备开始更新
                                 clientSocket.Send(buffer);
                                 // 写入协议
-                                prot = (Int32)Protocal.Update;
-                                buffer[0] = (byte)(prot >> 24);
-                                buffer[1] = (byte)(prot >> 16);
-                                buffer[2] = (byte)(prot >> 8);
-                                buffer[3] = (byte)(prot);
+                                Tools.AddToBytes(buffer, 0, (int)Protocal.Update);
                                 // 写入文件信息
                                 for (int i = 0; i != times; ++i)
                                 {
                                     // 写入包编号
-                                    buffer[4] = (byte)(i >> 24);
-                                    buffer[5] = (byte)(i >> 16);
-                                    buffer[6] = (byte)(i >> 8);
-                                    buffer[7] = (byte)(i);
+                                    Tools.AddToBytes(buffer, 4, i);
                                     // 写入文件流
-                                    fs.Read(buffer, 12, m_FSsize);
+                                    fs.Read(buffer, 8, m_FSsize);
                                     // 发送
                                     clientSocket.Send(buffer);
                                 }
@@ -171,7 +156,7 @@ namespace TerminalSystem
             while(true)
             {
                 Socket clientSocket = m_Socket.Accept();
-                
+                m_MessageListBox.Items.Add(DateTime.Now.ToString() + @"：新客户端接入，" + clientSocket.ToString());
             }
         }
 
@@ -188,6 +173,12 @@ namespace TerminalSystem
             }
             m_Socket.Bind(new IPEndPoint(m_IPAddress, m_Port));
             m_Socket.Listen(m_MaxBacklog);
+            MessageBox.Show("服务器启动完成。");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            InitialSocket();
         }
     }
 }

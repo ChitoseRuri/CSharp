@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TerminalSystem
+namespace CR
 {
     enum Protocal : Int32
     {
         Sale,
         Check,
         UpdateBegin,
-        Update, 
+        Update,
         UpdateEnd,
-        Same
+        Same,
+        Login
     }
 
     // Sale
@@ -34,20 +35,10 @@ namespace TerminalSystem
     // 4 int 当前包号
     // 1016 数据流
 
-    class Item
-    {
-        public int ip;
-        public string name;
-        public int maxCount;
-        public int saleCount;
-        public int price;
-        public Item(int _ip,string _name,int _maxCount,int _saleCount, int _price)
-        {
-            ip = _ip;
-            name = _name;
-            maxCount = _maxCount;
-            saleCount = _saleCount;
-            price = _price;
-        }
-    }
+    // Login
+    // 4 int 协议
+    // 4 int 名称长度
+    // string 名称
+    // 4 int 密码长度
+    // string 密码
 }

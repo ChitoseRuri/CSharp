@@ -12,6 +12,8 @@ F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\De
 F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem.exe
 F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\SupermarketSalesSystem.pdb
 F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\Login.g.cs
-F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\L.g.cs
 F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\Login.baml
-F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\L.baml
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\Admin.g.cs
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\Assistant.g.cs
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\Admin.baml
+F:\VS2017Save\C#\CSharp\Lab\SupermarketSalesSystem\SupermarketSalesSystem\obj\Debug\Assistant.baml

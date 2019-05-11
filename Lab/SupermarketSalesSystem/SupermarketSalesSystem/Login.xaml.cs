@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Net;
 using System.Net.Sockets;
 using System.IO;
+using CR;
 
 namespace SupermarketSalesSystem
 {
@@ -81,7 +82,7 @@ namespace SupermarketSalesSystem
         }
 
         /// <summary>
-        /// 取消登录，返回上一个界面
+        /// 登录，检查登录信息
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -91,7 +92,19 @@ namespace SupermarketSalesSystem
             IPAddress terminalIP;
             if (IPAddress.TryParse(m_TerminalIP.Text, out terminalIP))
             {
-                
+                Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                socket.Connect(new IPEndPoint(IPAddress.Parse(m_TerminalIP.Text), int.Parse(m_TerminalPort.Text)));
+                // 向服务器请求登录
+                byte[] buffer = new byte[1024];
+                Tools.AddToBytes(buffer, 0, (int)Protocal.Login);
+                int length1 = m_Name.Text.Length;
+                Tools.AddToBytes(buffer, 4, length1);
+                Tools.AddToBytes(buffer, 8, m_Name.Text);
+                int length2 = m_Password.Text.Length;
+                Tools.AddToBytes(buffer, 8 + length1, length2);
+                Tools.AddToBytes(buffer, 12 + length1, m_Password.Text);
+                //接受服务器反馈信息并处理
+                socket.Receive(buffer);
             }
             else
             {
@@ -100,7 +113,7 @@ namespace SupermarketSalesSystem
         }
 
         /// <summary>
-        /// 确认登录，检查登录信息
+        /// 取消登录，返回上一个界面
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

@@ -11,17 +11,22 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Net;
+using System.Net.Sockets;
+using System.IO;
 
 namespace SupermarketSalesSystem
 {
     /// <summary>
-    /// Window1.xaml 的交互逻辑
+    /// Assistant.xaml 的交互逻辑
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Assistant : Window
     {
-        public Window1()
+        private Socket m_Socket;
+        public Assistant(Socket socket)
         {
             InitializeComponent();
+            m_Socket = socket;
         }
     }
 }
