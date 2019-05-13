@@ -35,10 +35,21 @@ namespace CR
     // 4 int 当前包号
     // 1016 数据流
 
-    // Login
+    // Login 客户端发送
     // 4 int 协议
+    // 4 登录类型
     // 4 int 名称长度
     // string 名称
     // 4 int 密码长度
     // string 密码
+
+    // Login 服务器发送
+    // 4 int 协议
+    // 1 bool 登录是否成功
+
+    enum Character:Int32
+    {
+        Admin,
+        Assistant
+    }
 }

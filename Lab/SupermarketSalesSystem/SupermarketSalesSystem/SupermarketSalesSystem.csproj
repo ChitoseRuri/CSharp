@@ -56,14 +56,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="..\PublicScript\Item.cs">
+      <Link>Item.cs</Link>
+    </Compile>
+    <Compile Include="..\PublicScript\Protocal.cs">
+      <Link>Protocal.cs</Link>
+    </Compile>
+    <Compile Include="..\PublicScript\Tools.cs">
+      <Link>Tools.cs</Link>
+    </Compile>
     <Compile Include="Admin.xaml.cs">
       <DependentUpon>Admin.xaml</DependentUpon>
     </Compile>
     <Compile Include="Assistant.xaml.cs">
       <DependentUpon>Assistant.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Protocal.cs" />
-    <Compile Include="Tools.cs" />
     <Page Include="Admin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,7 +87,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Item.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
       <SubType>Code</SubType>

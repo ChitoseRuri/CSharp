@@ -12,9 +12,9 @@
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
         <Label Content="IP:" Margin="10,10,0.333,0" VerticalAlignment="Top" RenderTransformOrigin="-0.163,-0.169" FontSize="20" VerticalContentAlignment="Center" Height="30"/>
-        <TextBox x:Name="m_TerminalPort" HorizontalAlignment="Left" Margin="287,10,0,0" TextWrapping="Wrap" Text="12235" VerticalAlignment="Top" FontSize="20" Height="30" Width="64"/>
-        <Button Content="启动终端" HorizontalAlignment="Left" Margin="366,10,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="-1.897,0.613" Height="30" Click="Button_Click" Width="84"/>
-        <TextBox x:Name="m_TerminalIP" HorizontalAlignment="Left" Margin="92,10,0,0" TextWrapping="Wrap" Text="192.168.0.100" VerticalAlignment="Top" FontSize="20" Height="30" Width="138"/>
+        <TextBox x:Name="m_TerminalPort" HorizontalAlignment="Left" Margin="287,10,0,0" TextWrapping="Wrap" Text="12235" VerticalAlignment="Top" FontSize="20" Height="30" Width="72"/>
+        <Button Content="启动终端" HorizontalAlignment="Left" Margin="410,10,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="-1.897,0.613" Height="30" Click="Button_Click" Width="84"/>
+        <TextBox x:Name="m_TerminalIP" HorizontalAlignment="Left" Margin="92,10,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" FontSize="20" Height="30" Width="190"/>
         <ListBox x:Name="m_MessageListBox" HorizontalAlignment="Left" Height="316" Margin="10,45,0,0" VerticalAlignment="Top" Width="573"/>
 
     </Grid>

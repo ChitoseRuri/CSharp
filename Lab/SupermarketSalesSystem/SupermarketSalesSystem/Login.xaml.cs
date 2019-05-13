@@ -22,10 +22,10 @@ namespace SupermarketSalesSystem
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginWindow : Window
     {
-        private int m_Charactor = 0;
-        public MainWindow()
+        private Character m_Character;
+        public LoginWindow()
         {
             InitializeComponent();
             Initial();
@@ -41,7 +41,7 @@ namespace SupermarketSalesSystem
             m_Password.Margin = m_AssistantLogin.Margin;
             if (!File.Exists(@"config.cfg"))
             {
-                File.WriteAllLines(@"config.cfg", new string[] { @"127.0.0.1", @"12345" });
+                File.WriteAllLines(@"config.cfg", new string[] { @"127.0.0.1", @"12235" });
             }
             var fs = File.OpenText(@"config.cfg");
             m_TerminalIP.Text = fs.ReadLine();
@@ -58,9 +58,9 @@ namespace SupermarketSalesSystem
             m_AssistantLogin.Visibility = Visibility.Visible;
         }
 
-        private void Login(int charactor)
+        private void Login(Character charactor)
         {
-            m_Charactor = charactor;
+            m_Character = charactor;
             m_Cancel.Visibility = Visibility.Visible;
             m_Enter.Visibility = Visibility.Visible;
             m_Password.Visibility = Visibility.Visible;
@@ -73,12 +73,12 @@ namespace SupermarketSalesSystem
 
         private void M_AdminLogin_Click(object sender, RoutedEventArgs e)
         {
-            Login(1);
+            Login(Character.Admin);
         }
 
         private void M_AssistantLogin_Click(object sender, RoutedEventArgs e)
         {
-            Login(2);
+            Login(Character.Assistant);
         }
 
         /// <summary>
@@ -93,18 +93,37 @@ namespace SupermarketSalesSystem
             if (IPAddress.TryParse(m_TerminalIP.Text, out terminalIP))
             {
                 Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                socket.Connect(new IPEndPoint(IPAddress.Parse(m_TerminalIP.Text), int.Parse(m_TerminalPort.Text)));
+                socket.Connect(new IPEndPoint(IPAddress.Parse(m_TerminalIP.Text), Int16.Parse(m_TerminalPort.Text)));
                 // 向服务器请求登录
                 byte[] buffer = new byte[1024];
                 Tools.AddToBytes(buffer, 0, (int)Protocal.Login);
                 int length1 = m_Name.Text.Length;
-                Tools.AddToBytes(buffer, 4, length1);
-                Tools.AddToBytes(buffer, 8, m_Name.Text);
+                Tools.AddToBytes(buffer, 4, (Int32)m_Character);
+                Tools.AddToBytes(buffer, 8, length1);
+                Tools.AddToBytes(buffer, 12, m_Name.Text);
                 int length2 = m_Password.Text.Length;
-                Tools.AddToBytes(buffer, 8 + length1, length2);
-                Tools.AddToBytes(buffer, 12 + length1, m_Password.Text);
+                Tools.AddToBytes(buffer, 12 + length1, length2);
+                Tools.AddToBytes(buffer, 16 + length1, m_Password.Text);
                 //接受服务器反馈信息并处理
                 socket.Receive(buffer);
+                if(buffer[5] == 1)// 服务器认证成功
+                {
+                    Window window;
+                    if(m_Character == Character.Admin)
+                    {
+                        window = new Admin(socket);
+                    }
+                    else
+                    {
+                        window = new Assistant(socket);
+                    }
+                    window.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show(@"帐号不存在或密码错误！", @"登录失败");
+                }
             }
             else
             {

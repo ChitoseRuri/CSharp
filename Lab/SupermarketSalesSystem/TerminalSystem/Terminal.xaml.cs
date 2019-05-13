@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Net;
 using System.Net.Sockets;
 using System.IO;
+using System.Threading;
 using CR;
 
 namespace TerminalSystem
@@ -48,12 +49,28 @@ namespace TerminalSystem
                     @"256"       // Max Backlog
                 });
             }
+            // 初始化注册信息
+            if(!File.Exists(@"Admin.data"))
+            {
+                File.WriteAllLines(@"Admin.data", new string[]
+                {
+
+                });
+            }
+            if (!File.Exists(@"Assistant.data"))
+            {
+                File.WriteAllLines(@"Assistant.data", new string[]
+                {
+
+                });
+            }
             var fs = File.OpenText(@"config.cfg");
             m_TerminalIP.Text = fs.ReadLine();
             m_TerminalPort.Text = fs.ReadLine();
             m_MaxBacklog = int.Parse(fs.ReadLine());
             fs.Close();
             // 初始化销售统计
+            m_Items = new List<Item>();
             if(!File.Exists(@"item.data"))
             {
                 File.WriteAllLines(@"item.data", new string[] 
@@ -92,9 +109,9 @@ namespace TerminalSystem
                     case Protocal.Sale:
                         {
                             int itemID = BitConverter.ToInt32(buffer, 4);
-                            foreach(var item in m_Items)
+                            foreach (var item in m_Items)
                             {
-                                if(item.id == itemID)
+                                if (item.id == itemID)
                                 {
                                     item.saleCount += BitConverter.ToInt32(buffer, 8);
                                     break;
@@ -105,7 +122,7 @@ namespace TerminalSystem
                     case Protocal.Check:
                         {
                             var ft = File.OpenText(@"item.data");
-                            if(BitConverter.ToInt32(buffer, 4) == Int32.Parse(ft.ReadLine()))
+                            if (BitConverter.ToInt32(buffer, 4) == Int32.Parse(ft.ReadLine()))
                             {
                                 clientSocket.Send(BitConverter.GetBytes((int)(Protocal.Same)));
                                 ft.Close();
@@ -144,6 +161,39 @@ namespace TerminalSystem
                             }
                         }
                         break;
+                    case Protocal.UpdateBegin:
+                        break;
+                    case Protocal.Update:
+                        break;
+                    case Protocal.UpdateEnd:
+                        break;
+                    case Protocal.Same:
+                        break;
+                    case Protocal.Login:
+                        {
+                            Character loginCharacter = (Character)BitConverter.ToInt32(buffer, 4);
+                            int nameLength = BitConverter.ToInt32(buffer, 8);
+                            string name = Tools.BytesToString(buffer, 12, nameLength);
+                            int passwordLength = BitConverter.ToInt32(buffer, 12 + nameLength);
+                            string password = Tools.BytesToString(buffer, 16 + nameLength, passwordLength);
+                            StreamReader ft = (loginCharacter == Character.Admin) ? (
+                                File.OpenText(@"Admin.data")) : (File.OpenText(@"Assistant"));
+                            buffer[4] = 0;
+                            while(!ft.EndOfStream)
+                            {
+                                string fname = ft.ReadLine();
+                                if(name == fname)
+                                {
+                                    if(password == ft.ReadLine())
+                                    {
+                                        buffer[4] = 1;
+                                    }
+                                    break;
+                                }
+                            }
+                            clientSocket.Send(buffer);
+                        }
+                        break;
                 }
             }
         }
@@ -156,7 +206,12 @@ namespace TerminalSystem
             while(true)
             {
                 Socket clientSocket = m_Socket.Accept();
-                m_MessageListBox.Items.Add(DateTime.Now.ToString() + @"：新客户端接入，" + clientSocket.ToString());
+                Thread clientThread = new Thread(ReceiveThread);
+                clientThread.Start(clientSocket);         
+                m_MessageListBox.Dispatcher.Invoke(new Action(() =>
+                {
+                    m_MessageListBox.Items.Add(DateTime.Now.ToString() + @"：新客户端接入，" + clientSocket.ToString());
+                }));
             }
         }
 
@@ -173,12 +228,15 @@ namespace TerminalSystem
             }
             m_Socket.Bind(new IPEndPoint(m_IPAddress, m_Port));
             m_Socket.Listen(m_MaxBacklog);
-            MessageBox.Show("服务器启动完成。");
+            Thread listenThread = new Thread(ListenClientConnect);
+            listenThread.Start();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             InitialSocket();
+            Button button = (Button)sender;
+            button.Visibility = Visibility.Hidden;
         }
     }
 }

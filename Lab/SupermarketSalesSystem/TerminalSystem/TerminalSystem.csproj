@@ -56,17 +56,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Tools.cs" />
     <Page Include="Terminal.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="..\PublicScript\Item.cs">
+      <Link>Item.cs</Link>
+    </Compile>
+    <Compile Include="..\PublicScript\Protocal.cs">
+      <Link>Protocal.cs</Link>
+    </Compile>
+    <Compile Include="..\PublicScript\Tools.cs">
+      <Link>Tools.cs</Link>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Item.cs" />
-    <Compile Include="Protocal.cs" />
     <Compile Include="Terminal.xaml.cs">
       <DependentUpon>Terminal.xaml</DependentUpon>
       <SubType>Code</SubType>
