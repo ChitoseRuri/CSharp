@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SupermarketSalesSystem"
         mc:Ignorable="d"
-        Title="Assistant" Height="450" Width="800">
-    <Grid>
-        
+        Title="Assistant" Height="400" Width="600">
+    <Grid Height="371" Margin="0,0,0.333,-0.333" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="245*"/>
+            <ColumnDefinition Width="149*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="m_ListName" Height="300" Margin="0,10,148.333,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="m_ListPrice" Height="300" Margin="0.333,10,0,0" VerticalAlignment="Top" Grid.Column="2" HorizontalContentAlignment="Right"/>
+        <Label x:Name="m_TotalPriceLabel" Content="合计：" Grid.Column="1" Margin="244,319,1.333,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" Height="25" Grid.ColumnSpan="2"/>
+        <Button x:Name="m_Confirm" Content="结账" HorizontalAlignment="Left" Margin="160,349,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="20" Click="M_Confirm_Click"/>
+        <Label Content="收款：" HorizontalAlignment="Left" Margin="78,319,0,0" VerticalAlignment="Top" Height="25" Grid.Column="1" Width="46"/>
+        <TextBox x:Name="m_GetPriceText" HorizontalAlignment="Left" Height="25" Margin="124,319,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Grid.Column="1"/>
+        <Button x:Name="m_AddItem" Content="添加" HorizontalAlignment="Left" Margin="160,319,0,0" VerticalAlignment="Top" Width="75" Height="25" Grid.ColumnSpan="2" Click="M_AddItem_Click"/>
+        <TextBox x:Name="m_ItemIDText" HorizontalAlignment="Left" Height="25" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <ListBox x:Name="m_ListID" Height="300" Margin="0,10,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

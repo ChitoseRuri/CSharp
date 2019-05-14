@@ -65,5 +65,21 @@ namespace CR
             }
             return stb.ToString();
         }
+
+        /// <summary>
+        /// 把byte数组转换成Int32
+        /// </summary>
+        /// <param name="buffer">byte数组</param>
+        /// <param name="startIndex">开始的index</param>
+        /// <returns>转换后得到的int32数字</returns>
+        public static int BytesToInt32(byte[] buffer, int startIndex)
+        {
+            Int32 i32 = 0;
+            i32 += buffer[startIndex++] << 24;
+            i32 += buffer[startIndex++] << 16;
+            i32 += buffer[startIndex++] << 8;
+            i32 += buffer[startIndex];
+            return i32;
+        }
     }
 }

@@ -14,7 +14,8 @@ namespace CR
         Update,
         UpdateEnd,
         Same,
-        Login
+        Login,
+        Close
     }
 
     // Sale
@@ -46,6 +47,9 @@ namespace CR
     // Login 服务器发送
     // 4 int 协议
     // 1 bool 登录是否成功
+
+    // Close 关闭连接
+    // 4 int 协议
 
     enum Character:Int32
     {

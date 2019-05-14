@@ -104,9 +104,10 @@ namespace SupermarketSalesSystem
                 int length2 = m_Password.Text.Length;
                 Tools.AddToBytes(buffer, 12 + length1, length2);
                 Tools.AddToBytes(buffer, 16 + length1, m_Password.Text);
+                socket.Send(buffer);
                 //接受服务器反馈信息并处理
                 socket.Receive(buffer);
-                if(buffer[5] == 1)// 服务器认证成功
+                if(buffer[4] == 1)// 服务器认证成功
                 {
                     Window window;
                     if(m_Character == Character.Admin)
